@@ -1,0 +1,30 @@
+#include <stdlib.h>
+#include <iostream>
+using namespace std;
+Ymember functions declaration
+void insertionSort (int arr[], int length);
+void printArray(int arrayl], int size);
+main function
+int main()
+int array[5] = 15, 1, 6, 2, 4, 31;
+// calling insertion sort function to sort the array
+insertionSort (array, 6);
+return 0;
+void insertionSort (int arr[], int length)
+int i, j, key;
+for (i
+1; i < length; i++)
+j = i;
+while () > 0 && arr[j-1]> arr[3])
+key = arr[j];
+arr[j] = arr[j - 1];
+arr[j] = 1] = key?
+j--;
+cout << "Sorted Array:
+// print the sorted array printArray(arr, length);
+function to print the given array
+void printArray(int array[], int size)
+int j;
+for (i = 0; i < size; j++)
+cout <<" "<<< array[j];
+cout << endl;
