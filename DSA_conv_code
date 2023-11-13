@@ -1,0 +1,62 @@
+top = 0
+N = 15
+a = [0] * N  # Maximum size of Stack
+
+
+# function to insert data into stack
+def push(x):
+    global top
+    if top == N:
+        print("Stack Overflow")
+    else:
+        top += 1
+        a[top] = x
+        print(x, "Inserted")
+
+
+# function to remove data from the top of the stack
+def pop():
+    global top
+    if top == 0:
+        print("Stack Underflow")
+        return
+    else:
+        d = a[top]
+        top -= 1
+        print(d, "Removed")
+
+
+# function to check if stack is empty
+def is_empty():
+    if top < 0:
+        print("Stack is empty")
+    else:
+        print("Stack is not empty")
+
+
+# main function
+def main():
+    is_empty()
+    push(1)
+    push(2)
+    push(3)
+    push(4)
+    push(5)
+    push(6)
+    push(7)
+    push(8)
+    push(9)
+    push(10)
+    pop()
+    pop()
+    pop()
+    pop()
+    pop()
+    pop()
+    pop()
+    pop()
+    pop()
+    pop()
+
+
+main()
