@@ -1,0 +1,43 @@
+# include<iostream>
+using namespace std;
+int top = 0;
+const int N = 15;
+int a[N]; //Maximum size of Stack
+
+
+// function to insert data into stack
+void push(int x) {
+ if(top == N) {
+   cout << "Stack Overflow \n";
+ } else {
+   a[++top] = x;
+   cout << x << " Inserted \n";
+ }
+}
+// function to remove data from the top of the stack
+void pop() {
+ if(top == 0) {
+   cout << "Stack Underflow \n";
+   return;
+ } else {
+   int d = a[top--];
+   cout << d << " Removed \n";
+ }
+}
+// function to check if stack is empty
+void isEmpty() {
+ if(top < 0) {
+   cout << "Stack is empty \n";
+ } else {
+   cout << "Stack is not empty \n";
+ }
+}
+// main function
+int main() {
+ isEmpty();
+ push(1);push(2);push(3);push(4);push(5);
+ push(6);push(7);push(8);push(9);push(10);
+ pop();pop();pop();pop();pop();
+ pop();pop();pop();pop();pop();
+ pop();
+}
